@@ -1,0 +1,547 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Unversel Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body,
+html {
+    background-color: #F0F2F5;
+}
+
+/* Nav Baar */
+.fb-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.center-icons {
+    display: flex;
+    gap: 6rem;
+}
+
+.center-icons .bi {
+    display: flex;
+    font-size: 1.7rem;
+}
+
+.right-icon {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.bi-bell:hover {
+    color: red;
+    transition: 200ms ease;
+}
+
+.bi-chat-dots:hover {
+    color: blue;
+    transition: 200ms ease;
+}
+
+.bi-person-add:hover {
+    color: rgb(144, 144, 185);
+    transition: 200ms ease;
+}
+
+.bi-list:hover {
+    color: rgb(0, 206, 51);
+    transition: 200ms ease;
+}
+
+@media screen and (max-width:1200px) {
+    .center-icons {
+        display: flex;
+        gap: 4rem;
+        margin-left: 20rem;
+    }
+
+    .right-icon {
+        font-size: 1.5rem;
+        display: flex;
+        gap: 1rem;
+        padding-left: 2.5rem;
+    }
+
+    /* .sear input{
+        width: 40%;;
+    } */
+}
+
+@media screen and (max-width:1020px) {
+    .center-icons {
+        display: flex;
+        gap: 2.3rem;
+    }
+
+    .right-icon {
+        padding-left: 3rem;
+    }
+}
+
+/* Nav Baar End*/
+
+/* Main Section */
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+
+/* Main Sec Left Cont */
+#left-container {
+    height: 100vh;
+    width: 29%;
+    padding-bottom: 1rem;
+    overflow-y: auto;
+}
+
+@media screen and (max-width:1000px) {
+    #left-container {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:920px) {
+    #left-container {
+        display: none;
+    }
+}
+
+#left-container li:hover {
+    background-color: #d3d3d35d;
+}
+
+.left-img-cont img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.left-sec-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+li span {
+    margin-left: 1rem;
+    color: black;
+    text-align: center;
+}
+
+li .bi {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Main Sec Left Cont End */
+
+
+/* Main Sec Center Cont */
+#center-container {
+    height: 100vh;
+    width: 46%;
+    padding-bottom: 4rem;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 920px) {
+    #center-container {
+        width: 100%;
+    }
+}
+
+
+.stories-section {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.story-card {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.story-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.story-name {
+    padding: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: white;
+}
+
+.create-story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    border: 2px solid #1877f2;
+    font-size: 1rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.create-story img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.create-story .create-btn {
+    background-color: #1877f2;
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.story-card .profile-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #1877f2;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.story-card .profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stories-section::-webkit-scrollbar {
+    height: 8px;
+}
+
+.stories-section::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 576px) {
+    .story-card {
+        width: 120px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .story-card {
+        width: 130px;
+        height: 220px;
+    }
+
+    .story-name {
+        font-size: 0.9rem;
+    }
+
+    .story-card .profile-circle {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .story-card {
+        width: 150px;
+        height: 240px;
+    }
+
+    .story-name {
+        font-size: 1rem;
+    }
+
+    .story-card .profile-circle {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+.post-input {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-input input {
+    background-color: #f0f2f5;
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.rounded-circle {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.post-option {
+    transition: background-color 0.2s ease;
+}
+
+.post-option:hover {
+    background-color: #f0f2f5;
+}
+
+/* Hide text on smaller screens */
+@media (max-width: 576px) {
+    .post-option span {
+        display: none;
+    }
+}
+
+/* Modal Content */
+
+#cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vmin;
+}
+
+/* Modal content */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow-y: auto; 
+}
+
+#createPostForm, #updatePostForm {
+    background-color: white;
+    margin: 1% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+}
+
+
+.close-btn {
+    color: red;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 8px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.butn:hover {
+    background-color: #0056b3;
+}
+
+.edit-btn,
+.delete-btn {
+    background-color: #28a745;
+    margin-right: 10px;
+    border-radius: 2rem;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    opacity: 0.8;
+}
+
+.post {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.post_title {
+    margin-top: .4rem;
+    padding-left: 3.7rem;
+}
+
+.actions {
+    margin-top: 10px;
+}
+.post-image img{
+    border-radius: .5rem;
+    height: auto;
+    width: 100%;
+    object-fit:cover;
+    margin: 1rem 0;
+}
+
+/* Modal Content End */
+
+/* Main Sec Center Cont End */
+
+
+/* Main Sec Right Cont */
+
+
+#right-container {
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    #right-container {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:920px) {
+    #right-container {
+        display: none;
+    }
+}
+
+.card-1 .card-body {
+    background-color: #F0F2F5;
+}
+
+.right-sec-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.title-img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.card-1 .card-btn-1 {
+    color: #fff;
+    background-color: #0861F2;
+    padding: 3px 1rem 3px 1rem;
+    border-radius: 4px;
+    border: none;
+}
+
+.card-1 .card-btn-2 {
+    color: #000000;
+    background-color: #D8DADF;
+    padding: 3px 1rem 3px 1rem;
+    border-radius: 4px;
+    border: none;
+}
+
+.card-2 .card-body {
+    background-color: #F0F2F5;
+}
+
+.gift-img {
+    height: 30px;
+    width: 30px;
+}
+
+.card-3 .card-body {
+    background-color: #F0F2F5;
+}
+
+.card-3 li {
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+
+.card-4 .card-body {
+    background-color: #F0F2F5;
+}
+
+.card-4 li {
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+
+/* Main Sec Right Cont End */
+
+
+/* This Code Is Incomplete For NavBar */
+
+/* .nav-bar-section ul {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+
+}
+li{
+ list-style-type: none;   
+} */
